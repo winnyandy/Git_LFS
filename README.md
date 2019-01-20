@@ -9,3 +9,19 @@
 git lfs install
 ```
 
+## Getting Started
+```bash
+git lfs track “*.psd”
+git add .gitattributes
+git add file.psd
+git commit -m ‘Add psd file’
+git push origin master
+```
+
+## 如果不能用LFS 就用Branch
+```bash
+git checkout -b prod
+git add file.iso
+git merge master
+CI push prod branch to production
+```
